@@ -1,0 +1,85 @@
+/* Body styles */
+body {
+    background :hsla(0,0%,98%,.925);
+    font-family: 'arial',sans-serif;
+}
+
+/* Center heading */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/*these are the Form container style */
+.container {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px;  
+    background:white;
+    border-radius: 8px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; 
+    padding: 10px; 
+    margin: 10px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    transition: border-color 0.3s ease; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007BFF; 
+    outline: none; 
+}
+
+/* Button styles */
+.btn {
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 10px; 
+    background-color: #007BFF; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn:hover {
+    background-color: #0056b3; 
+}
+
+/* these are the Custom styles for error messages */
+.invalid-feedback {
+    color: red; 
+    font-size: 0.875em; 
+}
+
+/* it Shows feedback on error */
+input:invalid ~ .invalid-feedback {
+    display: block;
+}
+
+/* this is used for Media query for responsiveness */
+@media (max-width: 480px) {
+
+    .container {
+        padding: 15px; 
+    }
+
+    h2 {
+        font-size: 1.5em; 
+    }
+
+    .btn {
+        font-size: 0.9em; 
+    }
+}
